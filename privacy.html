@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FastLive Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --text: #16181d; --muted: #5d6470; --line: #e3e6eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1115; --text: #e8eaed; --muted: #9aa1ad; --line: #2a2f3a; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; border-top: 1px solid var(--line); padding-top: 20px; }
+  .muted { color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<h1>FastLive Privacy Policy</h1>
+<p class="muted">Applies to the FastLive app for Amazon Fire TV and Android TV. Last updated 20 November 2026.</p>
+
+<p>FastLive has no accounts, no advertising and no tracking. It does not collect your name, email address,
+location, device identifiers or what you watch.</p>
+
+<h2>Data kept only on your TV</h2>
+<p>These stay on your device. They are not sent to us, and they are excluded from Android backups and device-to-device transfer:</p>
+<ul>
+  <li>Your favourites, recently watched channels and settings (region, playback options, custom playlist and guide addresses).</li>
+  <li>Your parental PIN, stored only as a one-way salted hash, never as the digits themselves.</li>
+  <li>A cached channel list and programme guide.</li>
+</ul>
+<p>Uninstalling FastLive or clearing its data in your TV's settings deletes all of it.</p>
+
+<h2>Anonymous diagnostics</h2>
+<p>To keep channels working, FastLive can send a small diagnostic report after it refreshes its channel list.
+This only happens when FastLive's service has diagnostics enabled, and you can switch it off at any time in
+<strong>Settings &rarr; About &amp; legal &rarr; Share anonymous diagnostics</strong>. A report contains:</p>
+<table>
+  <tr><th>Sent</th><th>Why</th></tr>
+  <tr><td>A random install number created by the app (not linked to your device, account or identity)</td><td>To count how many installs are affected by a problem</td></tr>
+  <tr><td>App version and channel-list version</td><td>To spot a bad update</td></tr>
+  <tr><td>Whether the channel refresh worked, and for each channel source: its short id, whether it loaded, how many channels it had, and a fixed error label such as <code>dns</code> or <code>http_404</code></td><td>To find and replace broken sources</td></tr>
+  <tr><td>How many times playback was started and how many attempts failed since the last report</td><td>To measure reliability</td></tr>
+</table>
+<p>Reports never contain channel names, programmes, stream addresses, viewing history, or your IP address in
+stored form. Switching diagnostics off deletes the install number and any counts not yet sent. Reports are kept for up to 90 days.</p>
+
+<h2>Other services your TV contacts</h2>
+<p>FastLive does not host video. When you watch a channel, your TV connects directly to that broadcaster's
+streaming servers, and channel logos and listings are downloaded from their publishers (such as the public
+iptv-org directory on GitHub). Those services receive your IP address and the request, as with any website,
+under their own privacy policies.</p>
+
+<h2>Children</h2>
+<p>FastLive does not knowingly collect personal information from anyone, including children. Adult channels
+are excluded, and parents can lock further categories with a PIN.</p>
+
+<h2>Changes and contact</h2>
+<p>We will update this page if what FastLive collects changes. Questions or requests:
+<a href="https://github.com/yasir27uk/fastlive-config/issues">open an issue</a>.</p>
+</main>
+</body>
+</html>
