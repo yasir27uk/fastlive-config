@@ -19,7 +19,7 @@
 <body>
 <main>
 <h1>FastLive Privacy Policy</h1>
-<p class="muted">Applies to the FastLive app for Amazon Fire TV and Android TV. Last updated 20 November 2026.</p>
+<p class="muted">Applies to the FastLive app for Amazon Fire TV and Android TV. Last updated 20 November 2026 (device counts added).</p>
 
 <p>FastLive has no accounts, no advertising and no tracking. It does not collect your name, email address,
 location, device identifiers or what you watch.</p>
@@ -34,18 +34,21 @@ location, device identifiers or what you watch.</p>
 <p>Uninstalling FastLive or clearing its data in your TV's settings deletes all of it.</p>
 
 <h2>Anonymous diagnostics</h2>
-<p>To keep channels working, FastLive can send a small diagnostic report after it refreshes its channel list.
+<p>To keep channels working and to know how many TVs use FastLive, the app can send a small diagnostic report
+after it refreshes its channel list, and a short "app is open" signal every 10 minutes while you are using it.
 This only happens when FastLive's service has diagnostics enabled, and you can switch it off at any time in
 <strong>Settings &rarr; About &amp; legal &rarr; Share anonymous diagnostics</strong>. A report contains:</p>
 <table>
   <tr><th>Sent</th><th>Why</th></tr>
   <tr><td>A random install number created by the app (not linked to your device, account or identity)</td><td>To count how many installs are affected by a problem</td></tr>
   <tr><td>App version and channel-list version</td><td>To spot a bad update</td></tr>
+  <tr><td>Device type (Fire TV, Android TV or other Android) and the country chosen in your TV's region setting (not your location)</td><td>To count active devices by type and country</td></tr>
   <tr><td>Whether the channel refresh worked, and for each channel source: its short id, whether it loaded, how many channels it had, and a fixed error label such as <code>dns</code> or <code>http_404</code></td><td>To find and replace broken sources</td></tr>
   <tr><td>How many times playback was started and how many attempts failed since the last report</td><td>To measure reliability</td></tr>
 </table>
 <p>Reports never contain channel names, programmes, stream addresses, viewing history, or your IP address in
-stored form. Switching diagnostics off deletes the install number and any counts not yet sent. Reports are kept for up to 90 days.</p>
+stored form. Switching diagnostics off deletes the install number and any counts not yet sent. Reports are kept for up to 90 days; the anonymous
+install number with its first and last seen dates (used for install counts) is deleted after 400 days without a report.</p>
 
 <h2>Other services your TV contacts</h2>
 <p>FastLive does not host video. When you watch a channel, your TV connects directly to that broadcaster's
